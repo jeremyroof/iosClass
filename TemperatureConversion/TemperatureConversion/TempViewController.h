@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TempViewController : UIViewController
-
+    @property(weak,nonatomic) IBOutlet UITextField* farenheit;
+    @property(weak,nonatomic) IBOutlet UILabel* celsius;
 @end

@@ -26,4 +26,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(float)faren2celsius:(int) faren
+{
+    return (faren-32)/1.8;
+}
+
+-(IBAction) convertToCelsius:(id)sender
+{
+    int f=[self.farenheit.text intValue];
+    int c=[self faren2celsius:f];
+    self.celsius.text=[NSString stringWithFormat:@"%d",c];
+}
 @end
