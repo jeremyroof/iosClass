@@ -462,6 +462,7 @@
 				4D94E8BC16896FEE006310F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D94E8BD16896FEE006310F2 /* Build configuration list for PBXNativeTarget "TemperatureConversionTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +471,7 @@
 				4D94E8BF16896FEE006310F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

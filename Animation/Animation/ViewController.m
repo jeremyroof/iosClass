@@ -41,17 +41,13 @@
         frame1.origin.x=0;
     [UIView animateWithDuration:3 animations:^{self.imgView.frame=frame1;}];
 }
+
 -(IBAction)cellAnimation:(id)sender
 {
-
-    NSLog(@"%@  %d",self.images, self.imgView.isAnimating);
     self.imgView.animationImages=self.images;
     self.imgView.animationDuration=3;
     self.imgView.animationRepeatCount=2;
     [self.imgView startAnimating];
-    
-    
-    
 }
 
 @end

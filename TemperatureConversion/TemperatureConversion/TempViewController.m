@@ -33,8 +33,13 @@
 
 -(IBAction) convertToCelsius:(id)sender
 {
-    int f=[self.farenheit.text intValue];
+    int f=[self.fahrenheit.text intValue];
     int c=[self faren2celsius:f];
     self.celsius.text=[NSString stringWithFormat:@"%d",c];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)thisTextField {
+    [thisTextField resignFirstResponder];
+    return YES;
 }
 @end

@@ -9,11 +9,12 @@
             <objects>
                 <viewController id="2" customClass="TempViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrG-n7-eQ2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PrG-n7-eQ2">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6CS-Kv-mvh"/>
                                     <constraint firstAttribute="width" constant="145" id="uIt-Zw-Dhn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -57,20 +58,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="PrG-n7-eQ2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0JK-3S-jzS"/>
+                            <constraint firstItem="J54-x3-lB8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="57" id="0na-Wg-l7Q"/>
                             <constraint firstAttribute="trailing" secondItem="I6Y-IG-cw2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5fy-XU-TKu"/>
-                            <constraint firstItem="915-YB-KN3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="107" id="LSK-fH-yGE"/>
                             <constraint firstItem="uU2-58-9Qy" firstAttribute="baseline" secondItem="PrG-n7-eQ2" secondAttribute="baseline" type="default" id="M5h-3l-ogX"/>
-                            <constraint firstItem="915-YB-KN3" firstAttribute="leading" secondItem="uU2-58-9Qy" secondAttribute="leading" type="default" id="NQz-ah-al8"/>
-                            <constraint firstItem="I6Y-IG-cw2" firstAttribute="baseline" secondItem="J54-x3-lB8" secondAttribute="baseline" type="default" id="R63-lj-cwY"/>
-                            <constraint firstItem="J54-x3-lB8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ta0-Qk-4XN"/>
-                            <constraint firstItem="J54-x3-lB8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="57" id="yA6-qD-SEX"/>
+                            <constraint firstItem="915-YB-KN3" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="11" id="QOn-9T-9Q2"/>
+                            <constraint firstItem="J54-x3-lB8" firstAttribute="leading" secondItem="uU2-58-9Qy" secondAttribute="leading" type="default" id="XzD-wF-a8d"/>
+                            <constraint firstItem="J54-x3-lB8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="130" id="YVV-Rn-MGi"/>
+                            <constraint firstItem="915-YB-KN3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="30" id="Zdr-qS-1f5"/>
+                            <constraint firstItem="uU2-58-9Qy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="16" id="eWd-nI-5eV"/>
+                            <constraint firstItem="J54-x3-lB8" firstAttribute="baseline" secondItem="I6Y-IG-cw2" secondAttribute="baseline" type="default" id="sK5-K8-GDG"/>
                             <constraint firstItem="PrG-n7-eQ2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="12" id="zLH-eQ-do2"/>
-                            <constraint firstItem="uU2-58-9Qy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="13" id="zpo-Fy-eQl"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="celsius" destination="I6Y-IG-cw2" id="fih-QY-vrn"/>
-                        <outlet property="farenheit" destination="PrG-n7-eQ2" id="LUZ-ZL-AdL"/>
+                        <outlet property="fahrenheit" destination="PrG-n7-eQ2" id="VtI-x1-Rue"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -85,7 +89,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TempViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="celsius" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="farenheit" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="fahrenheit" candidateClass="UITextField"/>
             </relationships>
         </class>
     </classes>
